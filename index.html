@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgriConnect - Mettre en relation Agriculteurs et Commerçants</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-bg {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://placehold.co/1600x900/228B22/FFFFFF?text=Champ+agricole');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-green-700">
+                <i data-lucide="leaf" class="inline-block mr-2"></i>AgriConnect
+            </a>
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="#features" class="text-gray-600 hover:text-green-700">Fonctionnalités</a>
+                <a href="#value" class="text-gray-600 hover:text-green-700">Notre valeur</a>
+                <a href="#business-model" class="text-gray-600 hover:text-green-700">Business Model</a>
+                <a href="#" class="text-gray-600 hover:text-green-700">Connexion</a>
+                <a href="#" class="bg-green-600 text-white px-4 py-2 rounded-full hover:bg-green-700 transition duration-300">Inscription</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden">
+                <i data-lucide="menu"></i>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="#features" class="block py-2 text-gray-600 hover:text-green-700">Fonctionnalités</a>
+            <a href="#value" class="block py-2 text-gray-600 hover:text-green-700">Notre valeur</a>
+            <a href="#business-model" class="block py-2 text-gray-600 hover:text-green-700">Business Model</a>
+            <a href="#" class="block py-2 text-gray-600 hover:text-green-700">Connexion</a>
+            <a href="#" class="block mt-2 bg-green-600 text-white text-center px-4 py-2 rounded-full hover:bg-green-700 transition duration-300">Inscription</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-bg text-white">
+            <div class="container mx-auto px-6 py-24 text-center">
+                <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-4">Connecter les champs à votre commerce.</h1>
+                <p class="text-lg md:text-xl mb-8 max-w-3xl mx-auto">Notre plateforme réduit les intermédiaires pour offrir des produits frais, un prix juste et une logistique simplifiée.</p>
+                <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-4">
+                    <a href="#" class="bg-green-600 text-white px-8 py-3 rounded-full font-semibold text-lg hover:bg-green-700 transition duration-300 w-full md:w-auto">Je suis Agriculteur</a>
+                    <a href="#" class="bg-white text-green-700 px-8 py-3 rounded-full font-semibold text-lg hover:bg-gray-200 transition duration-300 w-full md:w-auto">Je suis Commerçant</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Fonctionnalités Clés Section -->
+        <section id="features" class="py-16 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Un écosystème numérique complet</h2>
+                    <p class="text-gray-600 mt-2">Toutes les fonctionnalités dont vous avez besoin pour prospérer.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Feature 1 -->
+                    <div class="p-6 bg-gray-50 rounded-lg shadow-sm hover:shadow-lg transition-shadow duration-300">
+                        <div class="flex items-center justify-center bg-green-100 rounded-full w-12 h-12 mb-4">
+                            <i data-lucide="users" class="text-green-700"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Profils détaillés</h3>
+                        <p class="text-gray-600">Créez votre profil, que vous soyez agriculteur (infos exploitation, cultures) ou commerçant (type d'activité, besoins).</p>
+                    </div>
+                    <!-- Feature 2 -->
+                    <div class="p-6 bg-gray-50 rounded-lg shadow-sm hover:shadow-lg transition-shadow duration-300">
+                        <div class="flex items-center justify-center bg-green-100 rounded-full w-12 h-12 mb-4">
+                            <i data-lucide="shopping-basket" class="text-green-700"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Catalogue en Ligne</h3>
+                        <p class="text-gray-600">Consultez un catalogue riche de produits agricoles avec prix, disponibilité en temps réel, et photos de qualité.</p>
+                    </div>
+                    <!-- Feature 3 -->
+                    <div class="p-6 bg-gray-50 rounded-lg shadow-sm hover:shadow-lg transition-shadow duration-300">
+                        <div class="flex items-center justify-center bg-green-100 rounded-full w-12 h-12 mb-4">
+                            <i data-lucide="clipboard-check" class="text-green-700"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Commande & Réservation</h3>
+                        <p class="text-gray-600">Les commerçants passent leurs commandes ou réservent des récoltes futures directement auprès des agriculteurs.</p>
+                    </div>
+                    <!-- Feature 4 -->
+                    <div class="p-6 bg-gray-50 rounded-lg shadow-sm hover:shadow-lg transition-shadow duration-300">
+                        <div class="flex items-center justify-center bg-green-100 rounded-full w-12 h-12 mb-4">
+                            <i data-lucide="credit-card" class="text-green-700"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Paiement Sécurisé</h3>
+                        <p class="text-gray-600">Intégration de solutions de paiement modernes et sécurisées : Mobile Money, cartes bancaires et même crypto-monnaies.</p>
+                    </div>
+                    <!-- Feature 5 -->
+                    <div class="p-6 bg-gray-50 rounded-lg shadow-sm hover:shadow-lg transition-shadow duration-300">
+                        <div class="flex items-center justify-center bg-green-100 rounded-full w-12 h-12 mb-4">
+                            <i data-lucide="map-pin" class="text-green-700"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Géolocalisation & Logistique</h3>
+                        <p class="text-gray-600">Visualisez les producteurs à proximité et connectez-vous avec nos partenaires logistiques pour un transport efficace.</p>
+                    </div>
+                    <!-- Feature 6 -->
+                    <div class="p-6 bg-gray-50 rounded-lg shadow-sm hover:shadow-lg transition-shadow duration-300">
+                        <div class="flex items-center justify-center bg-green-100 rounded-full w-12 h-12 mb-4">
+                            <i data-lucide="layout-dashboard" class="text-green-700"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Tableau de Bord Intuitif</h3>
+                        <p class="text-gray-600">Suivez vos ventes, analysez les besoins du marché, et anticipez les tendances pour optimiser votre activité.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Valeur Ajoutée Section -->
+        <section id="value" class="py-16">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Une valeur ajoutée pour tous</h2>
+                    <p class="text-gray-600 mt-2">Nous créons un cercle vertueux pour l'ensemble de la chaîne de valeur agricole.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                    <!-- Value 1 -->
+                    <div>
+                        <div class="flex items-center justify-center mx-auto bg-green-600 text-white rounded-full w-16 h-16 mb-4">
+                            <i data-lucide="trending-down" class="w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Réduction des pertes</h3>
+                        <p class="text-gray-600 px-4">En connectant directement les producteurs au marché, nous minimisons les pertes post-récoltes et garantissons la fraîcheur.</p>
+                    </div>
+                    <!-- Value 2 -->
+                    <div>
+                        <div class="flex items-center justify-center mx-auto bg-green-600 text-white rounded-full w-16 h-16 mb-4">
+                            <i data-lucide="hand-coins" class="w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Prix plus juste</h3>
+                        <p class="text-gray-600 px-4">Moins d'intermédiaires signifie une meilleure rémunération pour le travail des agriculteurs et des prix compétitifs pour les acheteurs.</p>
+                    </div>
+                    <!-- Value 3 -->
+                    <div>
+                        <div class="flex items-center justify-center mx-auto bg-green-600 text-white rounded-full w-16 h-16 mb-4">
+                            <i data-lucide="recycle" class="w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Approvisionnement fiable</h3>
+                        <p class="text-gray-600 px-4">Les commerçants bénéficient d'une source d'approvisionnement régulière, transparente et de qualité pour satisfaire leurs clients.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Business Model Section -->
+        <section id="business-model" class="py-16 bg-white">
+            <div class="container mx-auto px-6">
+                 <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Notre Business Model</h2>
+                    <p class="text-gray-600 mt-2">Un modèle économique durable et équitable.</p>
+                </div>
+                <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-gray-50 p-6 rounded-lg flex items-start space-x-4">
+                        <i data-lucide="percent-circle" class="text-green-700 w-8 h-8 flex-shrink-0 mt-1"></i>
+                        <div>
+                            <h4 class="font-semibold text-lg">Commission sur transaction</h4>
+                            <p class="text-gray-600">Une faible commission (ex: 3-5%) est prélevée sur chaque transaction, assurant la maintenance et l'évolution de la plateforme.</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg flex items-start space-x-4">
+                        <i data-lucide="gem" class="text-green-700 w-8 h-8 flex-shrink-0 mt-1"></i>
+                        <div>
+                            <h4 class="font-semibold text-lg">Abonnements Premium</h4>
+                            <p class="text-gray-600">Les grands comptes (hôtels, supermarchés) peuvent souscrire à un abonnement pour des fonctionnalités avancées et plus de visibilité.</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg flex items-start space-x-4">
+                        <i data-lucide="megaphone" class="text-green-700 w-8 h-8 flex-shrink-0 mt-1"></i>
+                        <div>
+                            <h4 class="font-semibold text-lg">Publicités Ciblées</h4>
+                            <p class="text-gray-600">Espaces publicitaires pour les fournisseurs de semences, d'engrais ou de matériel agricole, pertinents pour nos utilisateurs.</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg flex items-start space-x-4">
+                        <i data-lucide="truck" class="text-green-700 w-8 h-8 flex-shrink-0 mt-1"></i>
+                        <div>
+                            <h4 class="font-semibold text-lg">Services Logistiques Partenaires</h4>
+                            <p class="text-gray-600">Nous facilitons la mise en relation avec des transporteurs locaux (camionnettes, tricycles) et percevons une part du coût de service.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white">
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">AgriConnect</h3>
+                    <p class="text-gray-400">Révolutionner la chaîne d'approvisionnement agricole, un produit à la fois.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Navigation</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">À propos</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Carrières</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Contact</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Presse</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Légal</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Conditions d'utilisation</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Politique de confidentialité</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Suivez-nous</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i data-lucide="facebook"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i data-lucide="twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i data-lucide="linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-6 text-center text-gray-500">
+                <p>&copy; 2025 AgriConnect. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
